@@ -120,6 +120,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &223974226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6250457172801427762, guid: 867e071fea3a6410e8c61e5204d92f96,
+    type: 3}
+  m_PrefabInstance: {fileID: 2291709849473028509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &295348815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -318,7 +324,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -858,7 +864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4195ba5923bb74f81943776035e95475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strokePrefab: {fileID: 0}
+  strokePrefab: {fileID: 223974226}
   minDistance: 0.01
 --- !u!114 &943005350
 MonoBehaviour:
