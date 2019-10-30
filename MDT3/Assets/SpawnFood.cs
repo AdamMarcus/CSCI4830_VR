@@ -28,8 +28,11 @@ public class SpawnFood : MonoBehaviour
     {
         if (random.Next(200) == 1 && bowlCount <= maxBowlCount)
         {
+            int destTableNum = random.Next(1, 3);
+
             BowlPrefab newBowl = Instantiate(bowl);
             newBowl.name = "Bowl " + bowlIDIndex;
+            newBowl.destTable = "Table" + destTableNum;
             float randX = random.Next(1);
             float randY = random.Next(1);
             float randZ = random.Next(1);
