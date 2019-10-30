@@ -8,7 +8,11 @@ public class SpawnFood : MonoBehaviour
     public float bowlXRange = 1f;
     public float bowlYRange = 3.8f;
     public float bowlZRange = -3.7f;
-    public BowlPrefab bowl;
+    public BowlPrefab newBowl;
+    //public PiePrefab bowl;
+    //public BowlPrefab bowl;
+    //public BowlPrefab bowl;
+    //public BowlPrefab bowl;
     public System.Random random;
 
     private int maxBowlCount = 1;
@@ -21,7 +25,10 @@ public class SpawnFood : MonoBehaviour
     void Start()
     {
         random = new System.Random();
-    }
+        bowlXRange = gameObject.transform.position.x;
+        bowlYRange = gameObject.transform.position.y;
+        bowlZRange = gameObject.transform.position.z;
+}
 
     // Update is called once per frame
     void Update()
@@ -30,7 +37,7 @@ public class SpawnFood : MonoBehaviour
         {
             int destTableNum = random.Next(1, 3);
 
-            BowlPrefab newBowl = Instantiate(bowl);
+            BowlPrefab food = Instantiate(newBowl);
             newBowl.name = "Bowl " + bowlIDIndex;
             newBowl.destTable = "Table" + destTableNum;
             float randX = random.Next(1);
