@@ -5,6 +5,7 @@ using UnityEngine;
 public class BowlPrefab : MonoBehaviour
 {
     public string destTable;
+    public FoodPrefab thisFood;
 
     // Start is called before the first frame update
     void Start()
