@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6778064172122781967}
   - component: {fileID: 6778064172122781960}
   - component: {fileID: 6778064172122781962}
-  - component: {fileID: 6778064172122781963}
   - component: {fileID: 8436337204344175852}
   m_Layer: 0
   m_Name: PiePrefab
@@ -79,7 +78,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Size: {x: 0.16, y: 0.05, z: 0.16}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6778064172122781962
 MonoBehaviour:
@@ -93,20 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76755058d9d3446fbb0ebb9e4048a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisBowl: {fileID: 0}
---- !u!114 &6778064172122781963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6779500642772541598}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f63b6cbf236fa431dad125b7b0c9ddaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destTable: 
+  thisFood: {fileID: 0}
 --- !u!114 &8436337204344175852
 MonoBehaviour:
   m_ObjectHideFlags: 0

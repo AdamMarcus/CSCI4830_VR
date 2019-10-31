@@ -2,15 +2,15 @@
 
 public class FoodCollisionManager : MonoBehaviour
 {
-    public BowlPrefab thisBowl;
+    public FoodPrefab thisFood;
 
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision collisionInfo)
     {
         Debug.Log(collisionInfo.collider.name);
         Debug.Log("--------------------------");
-        thisBowl = gameObject.GetComponent<BowlPrefab>();
-        if (thisBowl.destTable == collisionInfo.collider.name)
+        thisFood = gameObject.GetComponent<FoodPrefab>();
+        if (thisFood.destTable == collisionInfo.collider.name)
         {
             Debug.Log("DESTROY FOOD, COLLISION");
             Destroy(gameObject);
