@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class HandScript : MonoBehaviour
 {
     public bool enter = true;
@@ -9,6 +11,16 @@ public class HandScript : MonoBehaviour
     public bool exit = true;
     public float moveSpeed;
     public bool isGrab = false;
+
+    public FoodPrefab thisFood;
+    public AudioClip handGrab;
+    
+    AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void Awake()
     {
@@ -89,7 +101,7 @@ public class HandScript : MonoBehaviour
         {
             Debug.Log("GRAB");
             Debug.Log(collisionObject.name);
-
+            audioSource.PlayOneShot(handGrab, 0.7F); 
             collisionObject.gameObject.transform.position = transform.position;
             //// Get a reference to the line renderer
             //LineRenderer line = currentStroke.GetComponent<LineRenderer>();
