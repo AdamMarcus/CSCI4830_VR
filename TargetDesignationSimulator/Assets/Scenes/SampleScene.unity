@@ -843,7 +843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mD: {x: 0, y: 0}
-  overRotateAngle: 89
+  overRotateAngle: 88
 --- !u!4 &1373012697 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 921131930312211204, guid: ee59b1900f36e4de4af04a3824654436,
@@ -1347,7 +1347,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 200
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
