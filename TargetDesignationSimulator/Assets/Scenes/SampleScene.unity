@@ -1308,7 +1308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hm: {fileID: 1373012698}
   bombDropHeight: 200
-  bomb: {fileID: -7370878639968288611, guid: f9d12dec99ed04bd3bc9477611ed986b, type: 3}
+  bomb: {fileID: -6595344597906172327, guid: 7b238d6f4e6ec4b8f9266f1651735121, type: 3}
   newHM: {fileID: 1373012698}
 --- !u!120 &1909619761
 LineRenderer:
