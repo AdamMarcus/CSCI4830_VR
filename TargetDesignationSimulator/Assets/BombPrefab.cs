@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class BombPrefab : MonoBehaviour
 {
+    Animator anim;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void OnCollisionEnter(Collision collision) {
+        Debug.Log("Get Triggered");
+        anim.SetBool("Explode", true);
     }
+
+    // // Update is called once per frame
+    // void Update()
+    // {
+        
+    // }
 }
