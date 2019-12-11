@@ -15,6 +15,8 @@ public class BombPrefab : MonoBehaviour
     void OnCollisionEnter(Collision collision) {
         Debug.Log("Get Triggered");
         anim.SetBool("Explode", true);
+        // yield return new WaitForSeconds(5);
+        // gameObject.destroy();
     }
 
     // // Update is called once per frame
