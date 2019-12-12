@@ -5,7 +5,11 @@
     "com.unity.ide.rider": "1.1.0",
     "com.unity.ide.vscode": "1.1.0",
     "com.unity.package-manager-ui": "2.2.0",
+<<<<<<< HEAD
     "com.unity.postprocessing": "2.1.7",
+=======
+    "com.unity.postprocessing": "2.0.3-preview",
+>>>>>>> c16ca6a2f762a37c7ba3d578ef615084a8e2fa20
     "com.unity.test-framework": "1.0.13",
     "com.unity.textmeshpro": "2.0.1",
     "com.unity.timeline": "1.1.0",
